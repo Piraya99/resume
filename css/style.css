@@ -2,12 +2,13 @@ html {
   font-size: 16px;
 }
 
+/* Theme Color */
 :root {
   --background-color: #fff;
   --main-darkgreen: #1f5636;
   --main-beige: #8f8350;
   --main-lightgrey: #e6e7e8;
-  --main-darkgrey:#535353; 
+  --main-darkgrey: #535353; 
 }
 
 body {
@@ -25,7 +26,28 @@ p {
 
 ul {
   line-height: 1.75em;
+  list-style: none;
 }
+
+/* Icon Styling */
+
+.material-icons, .fi {
+  margin-right: 10px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
 
 header {
     margin: 2.5% auto;
