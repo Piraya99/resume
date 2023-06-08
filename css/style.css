@@ -29,11 +29,11 @@ ul {
   list-style: none;
 }
 
-/* Icon Styling */
-
-.material-icons, .fi {
-  margin-right: 10px;
+li {
+  margin-left: 10px;
 }
+
+/* Icon Styling */
 
 .material-icons.md-18 {
   font-size: 18px;
