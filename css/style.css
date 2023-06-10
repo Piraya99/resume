@@ -24,15 +24,36 @@ p {
   max-width: 60ch;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Social Icons */
 
-.socialicon {
-  filter: var(--main-darkgreen);
+svg {
   width: 32px;
   height: 32px;
-  margin-right: 8px;
-  margin-top: 10px;
+  padding: 2px;
+  fill: var(--main-beige);
   opacity: 0.75;
+  margin-right: 6px;
+  margin-top: 10px;
+}
+
+.github:hover {
+  fill: #171515;
+}
+
+.behance:hover {
+  fill: #053eff;
+}
+
+.linkedin:hover {
+  fill: #0e76a8;
+}
+
+.instagram:hover {
+  fill: #dd2a7b;
 }
 
 ul {
