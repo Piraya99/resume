@@ -24,6 +24,17 @@ p {
   max-width: 60ch;
 }
 
+/* Social Icons */
+
+.socialicon {
+  filter: var(--main-darkgreen);
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  margin-top: 10px;
+  opacity: 0.75;
+}
+
 ul {
   line-height: 2em;
   list-style: none;
