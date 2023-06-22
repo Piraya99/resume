@@ -17,6 +17,7 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: var(--background-color);
   line-height: 1.4em;
+  padding: 30px;
 }
 
 p {
@@ -29,7 +30,7 @@ a {
 }
 
 .bio {
-  margin: 20px 40px;
+  margin: 10px 20px 40px;
 }
 
 /* Social Icons */
@@ -144,12 +145,11 @@ td.date {
   font-size: 14px;
   font-weight: 300;
   font-style: italic;
-
 }
 
 .container {
   margin: 2.5% auto;
-  width: 1000px;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -167,57 +167,36 @@ td.date {
 }
 
 @media (max-width: 480px) {
-  h1, h2 {
-    text-align: center;
-  }
-  img.profile {
-  margin-right: 0px;
-  }
-  .container {
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-  }
-  .socialmedia {
-    text-align: center;
+  h1 {
+    font-size: 1.75em;
   }
 }
+
 
 @media (max-width: 768px) {
   h1, h2 {
     text-align: center;
   }
-  img.profile {
+    img.profile {
   margin-right: 0px;
   }
-    .container {
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-  }
-    .box {
-      margin-bottom: 30px;
-    }
-    .socialmedia {
-    text-align: center;
-    }
-}
 
-@media (max-width: 1024px) {
-  img.profile {
-  margin-right: 0px;
-  }
   .container {
     width: 100%;
     flex-flow: column wrap;
     align-items: center;
     align-items: center;
   }
+
   .box {
     margin-bottom: 30px;
   }
+
   .socialmedia {
   text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
 }
 
