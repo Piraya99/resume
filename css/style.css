@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+.bio {
+  margin: 20px 40px;
+}
+
 /* Social Icons */
 
 svg {
@@ -35,13 +39,13 @@ svg {
   height: 32px;
   padding: 2px;
   fill: var(--main-beige);
-  opacity: 0.75;
+  opacity: 0.7;
   margin-right: 6px;
   margin-top: 10px;
 }
 
 .github:hover {
-  fill: #171515;
+  fill: #7d349f;
 }
 
 .behance:hover {
@@ -96,13 +100,14 @@ header {
 
 img.profile {
   border-radius: 50%;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-right: 60px;
   width: 160px;
   height: 160px;
 }
 
 /* Typography */
+
 
 /* Color*/
 h1,h4 {
@@ -142,7 +147,6 @@ td.date {
 
 }
 
-
 .container {
   margin: 2.5% auto;
   width: 1000px;
@@ -157,3 +161,63 @@ td.date {
   height: 200px;
   padding-bottom: 40px;
 }
+
+/* Responsive */
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    text-align: center;
+  }
+  img.profile {
+  margin-right: 0px;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .socialmedia {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  h1, h2 {
+    text-align: center;
+  }
+  img.profile {
+  margin-right: 0px;
+  }
+    .container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+    .box {
+      margin-bottom: 30px;
+    }
+    .socialmedia {
+    text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+  img.profile {
+  margin-right: 0px;
+  }
+  .container {
+    width: 100%;
+    flex-flow: column wrap;
+    align-items: center;
+    align-items: center;
+  }
+  .box {
+    margin-bottom: 30px;
+  }
+  .socialmedia {
+  text-align: center;
+}
+
