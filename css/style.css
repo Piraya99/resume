@@ -153,6 +153,7 @@ h4 {
   font-size: 1rem;
   letter-spacing: 0.075em;
   margin-bottom: 0;
+  padding: 0 5px;
 }
 
 h3 {
@@ -259,7 +260,7 @@ td.date {
   }
 
   .box.left, .box.center, .box.right {
-    width: 90%;
+    width: 100%;
   }
 }
 
