@@ -26,7 +26,7 @@ p {
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 nav {
@@ -221,6 +221,17 @@ td.date {
   h1 {
     font-size: 1.75em;
   }
+
+  h1, h2 {
+    text-align: center;
+  }
+  img.profile {
+    margin-right: 0px;
+  }
+  .socialmedia {
+    text-align: center;
+  }
+
   .box.left, .box.center, .box.right {
     width: 100%;
   }
@@ -236,6 +247,7 @@ td.date {
   .socialmedia {
     text-align: center;
   }
+
   .box.left, .box.center, .box.right {
     width: 90%;
   }
