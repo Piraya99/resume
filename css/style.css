@@ -60,11 +60,13 @@ div.greeting {
 h1 {
   color: var(--main-darkgreen);
   letter-spacing: 0.075em;
+  line-height: 1.2em;
 }
 
 h2 {
   color: var(--main-beige);
   font-size: 1.25rem;
+  line-height: 1.2em;
 }
 
 /* Social Icons */
@@ -241,6 +243,7 @@ td.date {
 @media only screen and  (min-width: 320px) and (max-width: 480px){
   h1 {
     font-size: 1.5em;
+    letter-spacing: 0.05em;
   }
 
   h1, h2 {
