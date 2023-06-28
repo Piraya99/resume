@@ -225,7 +225,7 @@ td.date {
   h1, h2 {
     text-align: center;
   }
-  
+
   img.profile {
     margin-right: 0px;
   }
@@ -235,6 +235,27 @@ td.date {
 
   .box.left, .box.center, .box.right {
     width: 100%;
+  }
+}
+
+@media only screen and  (min-width: 320px) and (max-width: 480px){
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  img.profile {
+    margin-right: 0px;
+  }
+  .socialmedia {
+    text-align: center;
+  }
+
+  .box.left, .box.center, .box.right {
+    width: 90%;
   }
 }
 
