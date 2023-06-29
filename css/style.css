@@ -12,15 +12,12 @@ html {
 }
 
 body {
-  max-width: 1200px;
-  margin: auto;
   font-family: 'Lato', sans-serif;
-  background-color: var(--background-color);
   line-height: 1.4em;
-  padding: 30px;
+  margin: 0;
 }
 
-p {
+#bio p {
   font-weight: 400;
   max-width: 60ch;
 }
@@ -53,8 +50,15 @@ nav a:visited {
   color: var(--main-beige);
 }
 
+main {
+  max-width: 1200px;
+  margin: auto;
+  background-color: var(--background-color);
+  padding: 0 30px;
+}
+
 div.greeting {
-  margin: 10px 20px 40px;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -128,7 +132,6 @@ ul {
 
 #bio {
     margin: 0 auto;
-    margin-bottom: 4%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -169,7 +172,7 @@ strong {
 }
 
 .container {
-  margin: 2% auto;
+  margin: 0 auto;
   width: 90%;
   display: flex;
   flex-flow: row wrap;
@@ -178,30 +181,24 @@ strong {
 
 .box {
   margin-bottom: 20px;
-}
-
-.box.left, .box.center, .box.right {
   background-color: var(--main-lightgrey);
-  width: 280px;
   padding-bottom: 20px;
   display: inline-flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1 280px;
   margin: 0px 15px 30px;
+  padding: 0px 10px;
 }
 
-.box.left ul, .box.center ul {
-  display: inline-flex;
+
+.box.left ul, .box.center ul, .box.right ul {
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .box.left ul li, .box.center ul li {
-  width: 120px;
-}
-
-.box.right ul {
-  display: inline-flex;
-  flex-flow: row wrap;
+  width: 130px;
 }
 
 .box.right ul li {
@@ -210,14 +207,31 @@ strong {
 
 /* Table */
 
-th, td {
-  padding: 10px 20px;
+th {
+  padding: 10px 20px 5px;
+}
+
+td {
+  padding: 5px 20px 10px;
 }
 
 td.date {
   font-size: 14px;
   font-weight: 300;
   font-style: italic;
+}
+
+footer {
+  height: 80px;
+  margin-top: 60px;
+  background-color: var(--main-darkgreen);
+  display: flex;
+  justify-items: space-between;
+}
+
+footer p {
+  color: var(--background-color);
+  margin: auto;
 }
 
 /* Responsive */
@@ -243,7 +257,7 @@ td.date {
     align-items: center;
   }
   .box.left, .box.center, .box.right {
-    height: 220px;
+    height: 160px;
   }
 }
 
@@ -257,8 +271,9 @@ td.date {
   }
 
   img.profile {
-    margin-right: 0px;
+    margin: 10px 0 0;
   }
+
   .socialmedia {
     text-align: center;
   }
@@ -270,9 +285,22 @@ td.date {
     font-size: 1.5em;
     letter-spacing: 0.05em;
   }
+
+  .box {
+    margin: 0 0 15px;
+  }
+
+  .box.right {
+    height: 220px;
+  }
+
 }
 
-
+@media only screen and  (max-width: 375px) {
+  .box.left, .box.center, .box.right {
+    height: 200px;
+  }
+}
 
 
 
