@@ -84,6 +84,7 @@ svg {
   opacity: 0.7;
   margin-right: 6px;
   margin-top: 10px;
+  transition: fill 500ms ease-out 2ms;
 }
 
 .github:hover {
@@ -181,13 +182,18 @@ strong {
 
 .box {
   margin-bottom: 20px;
-  background-color: var(--main-lightgrey);
+  background-color: rgba(230,231,232);
   padding-bottom: 20px;
   display: inline-flex;
   flex-direction: column;
   flex: 1 280px;
   margin: 0px 15px 30px;
   padding: 0px 10px;
+  transition: background-color 500ms ease-out 2ms;;
+}
+
+.box:hover {
+  background-color: rgb(230,231,232,0.5);
 }
 
 
@@ -213,6 +219,15 @@ th {
 
 td {
   padding: 5px 20px 10px;
+}
+
+td strong{
+  color: inherit;
+  transition: color 500ms ease-out 2ms;;
+}
+
+td strong:hover {
+  color: var(--main-darkgreen);
 }
 
 td.date {
