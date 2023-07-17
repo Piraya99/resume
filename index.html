@@ -7,41 +7,43 @@
 
 	<title>Piraya Sanpakij</title>
 
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<!-- Google Font: Lato-->
+	<!-- Google Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
-
 	<!-- Icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>  
 
 </head>
-<body>
 
-
+<body id="top">
 
 	<header>
 
 		<nav>
 			<ul>
 				<li><a href="#timeline">Timeline</a></li>
-				<li title='Coming Soon!'>Portfolio</li>
+				<li title='Coming Soon!'><a href="#portfolio">Portfolio</a></li> <!-- *** TO-DO : Portfolio drop-down menu -->
 			</ul>
 		</nav>
+
+		<!-- *** TO-DO : Switch to French Button -->
+
 	</header>
 	
 	<main>
 		<!-- Bio -->
-		<section id="bio">
-			<div class="profilephoto">
-				<img class="profile" src="img/profilephoto.jpeg" alt="profilephoto"/>
+		<section id="bio" class="container">
+			<div>
+				<img src="img/profilephoto.jpeg" alt="profilephoto"/>
 			</div>
 
-			<div class="greeting">
+			<div>
 				<h1>Piraya Sanpakij</h1>
 				<h2>A graphic designer who codes</h2>
 				<p> Hi, my name is Piraya. I am a graphic designer who believes that everything surrounding us is a source of creativity. Learning programming languages helps me understand a developer's perspective.</p>
@@ -50,14 +52,7 @@
 				<div class="socialmedia">
 					<!-- Github -->
 					<a href="https://github.com/piraya99" target="_blank">
-						<svg class="github" viewBox="0 0 448 448">
-						<path class="st0" d="M224,0C100.3,0,0,102.8,0,229.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1
-						c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8C82.5,340.1,67.8,333,67.8,333c-20.3-14.3,1.5-14,1.5-14
-						c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5
-						c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7
-						c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3
-						c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C383.9,417.1,448,331.1,448,229.7C448,102.8,347.7,0,224,0
-						z"/></svg>
+						<svg class="github" viewBox="0 0 448 448"><path class="st0" d="M224,0C100.3,0,0,102.8,0,229.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8C82.5,340.1,67.8,333,67.8,333c-20.3-14.3,1.5-14,1.5-14c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C383.9,417.1,448,331.1,448,229.7C448,102.8,347.7,0,224,0z"/></svg>
 					</a> 
 					<!-- Behance -->
 					<a href="https://www.behance.net/pirayaspk" target="_blank">
@@ -74,20 +69,22 @@
 				</div>
 			</div>
 		</section>	
-	
+		
+		<!-- Feature -->
 		<section id="feature">
 			<div class="container">
 				<!-- Programming Languages -->
-				<div class="box left">
+				<div class="box programlang">
 					<h4>Programming Languages</h4>
 					<ul>
 						<li><span class="material-icons md-24">code</span>HTML</li>
 						<li><span class="material-icons md-24">data_object</span>CSS</li>
+						<li><span class="material-icons md-24">javascript</span>Javascript</li>
 					</ul>
 				</div>
 
 				<!-- Human Languages -->
-				<div class="box center">
+				<div class="box humanlang">
 					<h4>Human Languages</h4>
 					<ul>
 						<li title='Hello :)'><span class="fi fi-gb"></span>English</li>
@@ -98,7 +95,7 @@
 				</div>	
 
 				<!-- Skills -->
-				<div class="box right">
+				<div class="box skills">
 					<h4>Skills</h4>
 					<ul>
 						<li><span class="material-icons md-24">palette</span>Graphic Design</li>
@@ -110,9 +107,10 @@
 			</div>
 		</section>
 
-			<!-- Working Experiences -->
+		<!-- Timeline -->
 		<section id="timeline">
 			<div class="container">
+				<!-- Working Experiences -->
 				<div class="table-left">
 					<table>
 						<thead>
@@ -198,9 +196,60 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- Portfolio -->
+		<section id="portfolio">
+			<h3>Portfolio</h3>
+			<div class="container">
+				<div class="project">
+					<img src="./img/project/project1-thumb.png" alt="project1-thumb">
+					<h4><a href="">Queue Free</a></h4>
+					<h5>Mobile Application Design</h5>
+				</div>
+				<div class="project">
+					<img src="./img/project/project2-thumb.jpg" alt="project2-thumb">
+					<h4><a href="">Home Switch Home</a></h4>
+					
+					<h5>Exchange Platform Design</h5>
+				</div>
+				<div class="project">
+					<img src="./img/project/project3-thumb.jpg" alt="project3-thumb">
+					<a href="">
+						<h4>Astromania</h4>
+					</a>
+					<h5>E-commerce Website</h5>
+				</div>
+				<div class="project">
+					<img src="./img/project/project4-thumb.jpg" alt="project4-thumb>
+					<a href="">
+						<h4>Maynooth</h4>
+					</a>
+					<h5>Interface Design with Adobe Xd</h5>
+				</div>
+				<div class="project">
+					<img src="./img/project/project5-thumb.jpg" alt="project5-thumb">
+					<a href="">
+						<h4>Château de la Rousselière</h4>
+					</a>
+					<h5>UI & UX Design</h5>
+				</div>
+				<div class="project">
+					<img src="./img/project/project6-thumb.jpg" alt="project6-thumb">
+						<h4>Focal Design</h4>
+					</a>
+					<h5>Web Creation with Elementor</h5>
+				</div>
+			</div>
+		</section>
+
+		<!-- **TO-DO : Add background image -->
+
 	</main>
+
 	<footer>
-		<p>&copy; Piraya Sanpakij 2023</p>
+		<div class="copyright">&copy; Piraya Sanpakij 2023</div>
+		<nav><a href="">Back to Top &#8593</a><nav>
 	</footer>
+
 </body>
 </html>
