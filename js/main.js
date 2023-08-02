@@ -28,14 +28,126 @@ const context = {
 			path2: 'M256,211.545A44.455,44.455,0,1,0,300.455,256,44.455,44.455,0,0,0,256,211.545Z',
 			path3: 'M256,0C114.615,0,0,114.615,0,256S114.615,512,256,512,512,397.385,512,256,397.385,0,256,0ZM389.333,312.5A76.836,76.836,0,0,1,312.5,389.333H199.5A76.837,76.837,0,0,1,122.666,312.5V199.5A76.836,76.836,0,0,1,199.5,122.667H312.5A76.836,76.836,0,0,1,389.333,199.5Z'
 		}
+	],
+
+	experiences: [
+		{
+			title:'Freelance Graphic Designer',
+			place:'Reflexe Cycles / Perf Master (France)',
+			start:'Oct 2022 -',
+			end:'Now'
+		},
+		{
+			title:'Webmarketing Manager',
+			place:'Jet Graphix (Nantes, France)',
+			start:'Sep 2020 -',
+			end:'Sep 2022'
+		},
+		{
+			title:'IN-HOUSE Graphic Designer',
+			place:'Flat Agency Corp. (Kyoto, Japan)',
+			start:'Apr 2016 -',
+			end:'Mar 2018'
+		},
+		{
+			title:'Assisntant UI & UX Designer',
+			place:'ADDD-Link Co.,Ltd  (Kyoto, Japan)',
+			start:'Nov 2015 -',
+			end:'Mar 2016'
+		},
+	],
+	educations: [
+		{
+			title:'Front-end Web Development',
+			place:'Codecademy',
+			start:'May 2023 -',
+			end:'Now'
+		},
+		{
+			title:'MBA 2 Digital Marketing Expert',
+			place:'My Digital School (Saint-Herblain, France)',
+			start:'Sep 2020 -',
+			end:'Aug 2022'
+		},
+		{
+			title:'Management & Entrepreneurship',
+			title2: 'in the Creative Economy',
+			place:'Audencia Business School (Nantes, France)',
+			start:'Sep 2018 -',
+			end:'Feb 2020'
+		},
+		{
+			title:'B.A. In Communication Design',
+			place:'Kyoto University of Art and Design (Japan)',
+			start:'Apr 2012 -',
+			end:'Mar 2016'
+		}
+	],
+	projects: [
+		{
+			title: 'Queue Free',
+			subtitle: 'Mobile Application Design',
+			src: './img/project/project1-thumb.png',
+			link: ''
+		},
+		{
+			title: 'Home Switch Home',
+			subtitle: 'Exchange Platform Design',
+			src: './img/project/project2-thumb.jpg',
+			link: ''
+		},
+		{
+			title: 'Astromania',
+			subtitle: 'E-commerce Website',
+			src: './img/project/project3-thumb.jpg',
+			link: ''
+		},
+		{
+			title: 'Maynooth',
+			subtitle: 'E-commerce Interface Design',
+			src: './img/project/project4-thumb.jpg',
+			link: ''
+		},
+		{
+			title: 'Château de la Rousselière',
+			subtitle: 'UI & UX Design',
+			src: './img/project/project5-thumb.jpg',
+			link: ''
+		},
+		{
+			title: 'Focal Design',
+			subtitle: 'Web Creation with Elementor',
+			src: './img/project/project6-thumb.jpg',
+			link: ''
+		},
 	]
-	
 };
 
-const templateSocial = document.getElementById("templateSocial");
+// Social Media Template
+const templateHB1 = document.getElementById("templateHB1");
+const templateSource1 = templateHB1.innerHTML;
+const template1 = Handlebars.compile(templateSource1);
+const compiledHtml1 = template1(context);
+document.getElementById("socialmedia").innerHTML = compiledHtml1;
 
-const templateSource = templateSocial.innerHTML;
+// Experience Template
+const templateHB2 = document.getElementById("templateHB2");
+const templateSource2 = templateHB2.innerHTML;
+const template2 = Handlebars.compile(templateSource2);
+const compiledHtml2 = template2(context);
+document.getElementById("experiences").innerHTML = compiledHtml2;
 
-const template = Handlebars.compile(templateSource);
-const compiledHtml = template(context);
-document.getElementById("socialmedia").innerHTML = compiledHtml;
+// Education Template
+const templateHB3 = document.getElementById("templateHB3");
+const templateSource3 = templateHB3.innerHTML;
+const template3 = Handlebars.compile(templateSource3);
+const compiledHtml3 = template3(context);
+document.getElementById("educations").innerHTML = compiledHtml3;
+
+// Project Template
+const templateHB4 = document.getElementById("templateHB4");
+const templateSource4 = templateHB4.innerHTML;
+const template4 = Handlebars.compile(templateSource4);
+const compiledHtml4 = template4(context);
+document.getElementById("projects").innerHTML = compiledHtml4;
+
