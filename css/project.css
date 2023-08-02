@@ -1,0 +1,28 @@
+.carousel {
+	display: inline-flex;
+}
+
+button.prev, button.next {
+	background-color: transparent;
+	border: transparent;
+}
+
+button.next {
+	padding-left: 20px;
+}
+
+.carousel {
+	padding-top: 15px;
+}
+
+.carousel-inner {
+	width: 90%;
+}
+
+.carousel-item.active {
+	display: inline-block;
+}
+
+.carousel-item {
+	display: none;
+}

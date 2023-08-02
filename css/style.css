@@ -24,7 +24,6 @@ img {
 
 a, a:link {
   text-decoration: none;
-  color: inherit;
 }
 
 a:visited {
@@ -47,7 +46,9 @@ nav li {
   width: 100px;
 }
 
-
+.darkgreen {
+  color: var(--main-darkgreen);
+}
 
 header nav a:link {
   color: var(--main-darkgreen);
@@ -71,6 +72,8 @@ main {
   flex-flow: row wrap;
   justify-content: space-around;
 }
+
+/* Home Page Rulesets */
 
 #bio {
   justify-content: center;
@@ -105,14 +108,25 @@ h2 {
 
 /* Social Icons */
 svg {
+  fill: var(--main-beige);
   width: 32px;
   height: 32px;
-  padding: 2px;
-  fill: var(--main-beige);
   opacity: 0.7;
-  margin-right: 6px;
   margin-top: 10px;
   transition: fill 500ms ease-out 2ms;
+}
+
+#socialmedia a {
+  text-decoration: none;
+}
+
+.github {
+  width: 36.5px;
+  height: 36.5px;
+}
+
+.behance, .linkedin, .instagram {
+  padding: 4px;
 }
 
 .github:hover {
