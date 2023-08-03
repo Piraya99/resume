@@ -20,8 +20,8 @@
 
     <!-- Handlebars -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
-	<script src="js/handlebars-v4.7.7.js"></script>
-	<!-- Handlebars Template-->
+	<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+	<!-- Handlebars Templates-->
 	<script id="templateHB1" type="text/x-handlebars-template">
 		{{#each socialmedias}}
 			<a href={{this.link}} target="_blank">
@@ -56,12 +56,11 @@
 				<td class="date">{{this.start}}<br>{{this.end}}</td>
 			</tr>
 		{{/each}}
-
 	</script>
 	<script id="templateHB4" type="text/x-handlebars-template">
 		{{#each projects}}
 			<div class="project">
-				<img src={{this.src}} alt={{this.title}}">
+				<img src={{this.src}} alt={{this.title}}>
 				<h4><a href={{this.link}}>{{this.title}}</a></h4>
 				<h5>{{this.subtitle}}</h5>
 			</div>
@@ -171,7 +170,7 @@
 		</section>
 
 		<!-- Projects -->
-		<section>
+		<section id="portfolio">
 			<h3>Portfolio</h3>
 			<div class="container" id="projects">
 			</div>
