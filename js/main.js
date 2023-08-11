@@ -1,3 +1,5 @@
+// Handlebars Templates
+
 const context = {
 
 	socialmedias: [
@@ -150,3 +152,7 @@ const templateSource4 = templateHB4.innerHTML;
 const template4 = Handlebars.compile(templateSource4);
 const compiledHtml4 = template4(context);
 document.getElementById("projects").innerHTML = compiledHtml4;
+
+// Change Language
+let bioSubtitle = document.getElementById('bioSubtitle');
+bioSubtitle.innerHTML = 'Graphiste qui code';
